@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag gm4latesta/web_server
     - name: Push the image to DockerHub
-      run: docker login -u gm4latesta -p ${{ secrets.DOCKER_TOKEN }} && docker push gm4latesta/web_server
+      run: docker login -u gm4latesta -p ${{ secrets.DOCKER_TOKEN }} && docker push gm4latesta/bdp2022
